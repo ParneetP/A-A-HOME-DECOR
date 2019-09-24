@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<?php include('connection.php'); ?>
-
 <html lang="en">
 <head>
 <title>A&A HomeDecor</title>
@@ -15,8 +13,8 @@
 <link href="tools/css/font-awesome.css" rel="stylesheet"> 
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
-<script src="tools/tools/js/jquery-1.11.1.min.js"></script>
-<script src="tools/tools/js/bootstrap.js"></script>
+<script src="tools/js/jquery-1.11.1.min.js"></script>
+<script src="tools/js/bootstrap.js"></script>
 
 </head>
 <body>
@@ -26,14 +24,14 @@
 			<div class="container">
 				<div class="agileinfo-social-grids">
 					<ul>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.facebook.com/aahomedecor47/"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-rss"></i></a></li>
 						<li><a href="#"><i class="fa fa-vk"></i></a></li>
 					</ul>
 				</div>
 				<div class="w3layouts-banner-right">
-					<h1><a href="tools/index.html">A&A HomeDecor</a></h1>
+					<h1><a href="index.php"> A&A  </a></h1>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -46,22 +44,22 @@
 							<li>	
 								<div class="w3layouts-banner-info">
 									<h4>A WIDE
-									<span>HOMEDECOR</span>
-									 PRODUCTS</h4>
+									<span>SELECTION</span>
+									OF PRODUCTS</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida libero. Quisque mauris urna, feugiat sed nisi et, dignissim tincidunt neque.</p>
 									<div class="w3-button">
-										<a href="tools/single.html" class="btn btn-1 btn-1b">Read More</a>
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
 									</div>
 								</div>
 							</li>
-							<li>	
+							<li>
 								<div class="w3layouts-banner-info">
 									<h4>THE BEST
 									<span>HOMEDECOR</span>
-									PRODUCTS1</h4>
+									SERVICES</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida libero. Quisque mauris urna, feugiat sed nisi et, dignissim tincidunt neque.</p>
 									<div class="w3-button">
-										<a href="tools/single.html" class="btn btn-1 btn-1b">Read More</a>
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
 									</div>
 								</div>
 							</li>
@@ -70,7 +68,7 @@
 				</section>
 				<!-- flexSlider -->
 				<link rel="stylesheet" href="tools/css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="tools/tools/js/jquery.flexslider.js"></script>
+				<script defer src="tools/js/jquery.flexslider.js"></script>
 				<script type="text/javascript">
 					$(window).load(function(){
 						$('.flexslider').flexslider({
@@ -80,7 +78,7 @@
 							}
 						});
 					});
-				</script>
+				</script>				
 				<!-- //flexSlider -->
 			</div>
 		</div>
@@ -99,9 +97,11 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li><a class="active" href="index.php">Home</a></li>
-								<li><a href="#" class="scroll">About</a></li>
-								<li><a href="#" class="scroll">Products</a></li>
-								<li><a href="#" class="scroll">Contact</a></li>
+								<li><a href="#about" class="scroll">About</a></li>
+								<li><a href="#services" class="scroll">Products</a></li>
+								<li><a href="login.php" class="scroll">Login</a></li>
+								<li><a href="signup.php" class="scroll">Signup</a></li>
+								<li><a href="#contact" class="scroll">Contact us</a></li>
 							</ul>
 							<div class="clearfix"> </div>							
 						</div>	
