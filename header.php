@@ -57,7 +57,7 @@
 									<h4>THE BEST
 									<span>HOMEDECOR</span>
 									SERVICES</h4>
-									<p>add some text here </p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida libero. Quisque mauris urna, feugiat sed nisi et, dignissim tincidunt neque.</p>
 									<div class="w3-button">
 										<a href="#" class="btn btn-1 btn-1b">Read More</a>
 									</div>
