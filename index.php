@@ -1,12 +1,4 @@
 <?php include('header.php'); ?>
-<<<<<<< Updated upstream
-
-	Body Of The Home Page<br>
-	Slides Of The Home Page<br>
-	Team Information<br>
-	Content Of The Home Page
-	<!-- //contact -->
-=======
 <!-- works -->
 <div class="works" id="works">
 <div class="container">
@@ -14,10 +6,11 @@
 		<div class="col-md-4 works-left">
 			<div class="w3ls-heading works-heading">
 				<h3>Our Works</h3>
-				<h5>A&A Home decor is focusing on home decor products</h5>
+				<h5>Morbi in dui pretium, finibus sapien vel, bibendum ipsum</h5>
 			</div>
 			<div class="works-info">
-				<p>Home decoration refers to the art and science of making an internal and external space more attractive and functionally useful for its residents. It used for decorating your home with various designer elements such as color, style of furniture, floor design etc.	</div>
+				<p>Donec nunc arcu, rutrum quis enim sed, dapibus blandit lorem. Duis ipsum velit, consequat ut fringilla eget, iaculis eget est. Vivamus eu est eu nunc eleifend consectetur. <span>Cras ut finibus metus, in sagittis nunc. Cras vestibulum pellentesque nunc et auctor.</span></p>
+			</div>
 		</div>
 		<div class="col-md-8 work-right">
 			<div class="gallery-grids">
@@ -29,6 +22,7 @@
 									<h4> A&A </h4>
 									<p>Home Decor Australia</p>
 								</div>
+							
 						</div>
 					</div>
 					<div class="col-sm-3 gallery-grids-left">
@@ -38,6 +32,7 @@
 									<h4> A&A </h4>
 									<p>Home Decor Australia</p>
 								</div>
+							
 						</div>
 					</div>
 					<div class="col-sm-3 gallery-grids-left">
@@ -57,6 +52,7 @@
 									<h4> A&A </h4>
 									<p>Home Decor Australia</p>
 								</div>
+							
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -69,6 +65,7 @@
 									<h4> A&A </h4>
 									<p>Home Decor Australia</p>
 								</div>
+					
 						</div>
 					</div>
 					<div class="col-sm-3 gallery-grids-left">
@@ -112,5 +109,4 @@
 </div>
 	<!-- //works -->
 	
->>>>>>> Stashed changes
 <?php include('footer.php'); ?>
