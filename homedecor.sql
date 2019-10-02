@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2019 at 07:02 AM
+-- Generation Time: Sep 16, 2019 at 01:30 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -72,17 +72,6 @@ CREATE TABLE `tbl_contact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_gallery`
---
-
-CREATE TABLE `tbl_gallery` (
-  `image_id` int(20) NOT NULL,
-  `image_name` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `user`
 --
 
@@ -121,12 +110,6 @@ ALTER TABLE `tbl_contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
--- Indexes for table `tbl_gallery`
---
-ALTER TABLE `tbl_gallery`
-  ADD PRIMARY KEY (`image_id`);
-
---
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -153,12 +136,6 @@ ALTER TABLE `tbl_administrator`
 --
 ALTER TABLE `tbl_contact`
   MODIFY `contact_id` int(20) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tbl_gallery`
---
-ALTER TABLE `tbl_gallery`
-  MODIFY `image_id` int(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
