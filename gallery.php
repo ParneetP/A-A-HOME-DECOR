@@ -408,26 +408,7 @@
                         <small class='text-muted'></small>
                     </div> <!-- text-right / end -->
                 </a>
-            </div> <!-- col-6 / end -->
-            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="thumbnail fancybox" rel="ligthbox" href="tools/images/b60.jpg">
-                    <img class="img-responsive" alt="" src="tools/images/b60.jpg" />
-                    <div class='text-right'>
-                        <small class='text-muted'></small>
-                    </div> <!-- text-right / end -->
-                </a>
-            </div>
-        </div> <!-- list-group / end -->
-	</div>
-</div> <!-- container / end -->
-<script>
-$(document).ready(function(){
-    
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
+            
    
 </script>
 <?php include('footer.php');?>
