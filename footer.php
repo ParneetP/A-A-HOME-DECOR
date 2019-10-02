@@ -1,8 +1,8 @@
-	<div class="footer">
+	<div class="footer" style="background:grey;">
 		<div class="container">
 			<div class="social">
 				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.facebook.com/aahomedecor47/"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fa fa-rss"></i></a></li>
 					<li><a href="#"><i class="fa fa-vk"></i></a></li>
@@ -24,9 +24,7 @@
 			imgHeight: 768
 		})
 	</script>
-
 <script type="text/javascript" src="tools/tools/js/easing.js"></script>
-	
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
