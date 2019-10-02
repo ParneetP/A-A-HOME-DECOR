@@ -8,4 +8,6 @@
 					<li><a href="#"><i class="fa fa-vk"></i></a></li>
 				</ul>
 			</div>
+			</div>
+		</div>
 			
