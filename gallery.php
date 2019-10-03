@@ -419,3 +419,15 @@
             </div>
         </div> <!-- list-group / end -->
 	</div>
+</div> <!-- container / end -->
+<script>
+$(document).ready(function(){
+    
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+   
+</script>
+<?php include('footer.php');?>
