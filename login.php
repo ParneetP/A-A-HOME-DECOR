@@ -13,7 +13,7 @@
 	<h1 style="background:grey;margin-top: unset;">Login Here</h1>
 	<div class="register-form-homedecor" style="margin-bottom: 81px;">
 		<!-- Form starts here -->
-		<form action="codes/login.php" method="post">
+		<form action="#" method="post">
 			<h3 class="sub-heading-agileits">Login Details</h3>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">

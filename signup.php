@@ -9,7 +9,7 @@
 <body>
 	<h1 style="background:grey;margin-top: unset;">Register Here</h1>
 	<div class="register-form-homedecor" style="margin-bottom: 81px;">
-		<form action="codes/signup.php" method="post">
+		<form action="#" method="post">
 			<h3 class="sub-heading-agileits">Personal Details</h3>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
@@ -19,13 +19,24 @@
 					<input type="text" name="lastname" placeholder="Last Name" required="">
 				</div>
 			</div>
-			<div class="field-agileinfo-spc form-w3-agile-text2">
-					<select name="gender" class="form-control" style="height:50px;">
-						<option>Gender</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-					</select>
-				</div>
+			<div class="radio-section">
+				<h6>Gender</h6>
+				<ul class="radio-buttons-w3-agileits">
+					<li>
+						<input type="radio" id="a-option" name="gender">
+						<label for="a-option" value="MALE">MALE</label>
+						<div class="check"></div>
+					</li>
+					<li>
+						<input type="radio" id="b-option" name="gender">
+						<label for="b-option" value="FEMALE">FEMALE</label>
+						<div class="check">
+							<div class="inside"></div>
+						</div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input type="email" name="email" placeholder="Email" required="">
