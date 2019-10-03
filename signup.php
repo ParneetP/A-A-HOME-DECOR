@@ -2,7 +2,9 @@
 <?php include("header.php");?>
 <html>
 <head>
-	
+	<link rel="stylesheet" href="tools/log/css/jquery-ui.css" />
+	<link href="tools/log/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
 </head>
 <body>
 	<h1 style="background:grey;margin-top: unset;">Register Here</h1>
@@ -17,7 +19,6 @@
 					<input type="text" name="lastname" placeholder="Last Name" required="">
 				</div>
 			</div>
-<<<<<<< HEAD
 			<div class="radio-section">
 				<h6>Gender</h6>
 				<ul class="radio-buttons-w3-agileits">
@@ -36,9 +37,6 @@
 				</ul>
 				<div class="clear"></div>
 			</div>
-=======
-			
->>>>>>> d7a600bd5caad556106c4efba71c470ea968722a
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input type="email" name="email" placeholder="Email" required="">
@@ -46,7 +44,14 @@
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input id="datepicker" name="dob" type="text" placeholder="DOB" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"	required="">
 				</div>
-			
+			</div>
+			<div class="main-flex-w3ls-sectns">
+			</div>
+			<div class="main-flex-w3ls-sectns">
+			<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="Phoneno" placeholder="Phone Number" >
+				</div>			
+			</div>
 			<div class="field-agileinfo-spc form-w3-agile-text">
 				<textarea name="address" placeholder="Address..."></textarea>
 			</div>
