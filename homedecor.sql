@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2019 at 01:30 PM
+-- Generation Time: Oct 02, 2019 at 02:52 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -36,6 +36,13 @@ CREATE TABLE `products` (
   `productimage` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`productid`, `productname`, `productprice`, `productdetails`, `productimage`) VALUES
+(5, 'sample5', '100', 'sdsdfsf', 'Lighthouse.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -67,6 +74,17 @@ CREATE TABLE `tbl_contact` (
   `username` varchar(30) NOT NULL,
   `message` varchar(30) NOT NULL,
   `contactnumber` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_gallery`
+--
+
+CREATE TABLE `tbl_gallery` (
+  `image_id` int(20) NOT NULL,
+  `image_name` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -110,6 +128,12 @@ ALTER TABLE `tbl_contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
+-- Indexes for table `tbl_gallery`
+--
+ALTER TABLE `tbl_gallery`
+  ADD PRIMARY KEY (`image_id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -123,7 +147,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `productid` int(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `productid` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbl_administrator`
@@ -136,6 +160,12 @@ ALTER TABLE `tbl_administrator`
 --
 ALTER TABLE `tbl_contact`
   MODIFY `contact_id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_gallery`
+--
+ALTER TABLE `tbl_gallery`
+  MODIFY `image_id` int(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
