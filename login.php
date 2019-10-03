@@ -23,15 +23,7 @@
 					<input type="password" name="password" placeholder="Password" required="">
 				</div>
 			</div>
-			
-			<input type="submit" value="Submit">
-			<input type="reset" value="Clear Form">
-			<div class="clear"></div>
-		</form>
-		<!--// Form starts here -->
-	</div>
-
-	<script type="text/javascript" src="tools/log/js/jquery-2.2.3.min.js"></script>
+			g/js/jquery-2.2.3.min.js"></script>
 	<!-- Calendar Js -->
 	<script src="tools/log/js/jquery-ui.js"></script>
 	<script>
