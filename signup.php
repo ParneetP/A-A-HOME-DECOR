@@ -19,13 +19,7 @@
 					<input type="text" name="lastname" placeholder="Last Name" required="">
 				</div>
 			</div>
-			<div class="field-agileinfo-spc form-w3-agile-text2">
-					<select name="gender" class="form-control" style="height:50px;">
-						<option>Gender</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-					</select>
-				</div>
+			
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input type="email" name="email" placeholder="Email" required="">
@@ -33,14 +27,7 @@
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input id="datepicker" name="dob" type="text" placeholder="DOB" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"	required="">
 				</div>
-			</div>
-			<div class="main-flex-w3ls-sectns">
-			</div>
-			<div class="main-flex-w3ls-sectns">
-			<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="Phoneno" placeholder="Phone Number" >
-				</div>			
-			</div>
+			
 			<div class="field-agileinfo-spc form-w3-agile-text">
 				<textarea name="address" placeholder="Address..."></textarea>
 			</div>
