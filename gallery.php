@@ -21,6 +21,7 @@
                     </div> <!-- text-right / end -->
                 </a>
             </div> 
+            
             <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                 <a class="thumbnail fancybox" rel="ligthbox" href="tools/images/b2.jpg">
                     <img class="img-responsive" alt="" src="tools/images/b2.jpg" />
