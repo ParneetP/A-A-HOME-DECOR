@@ -33,30 +33,7 @@
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input id="datepicker" name="dob" type="text" placeholder="DOB" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"	required="">
 				</div>
-			</div>
-			<div class="main-flex-w3ls-sectns">
-			</div>
-			<div class="main-flex-w3ls-sectns">
-			<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="Phoneno" placeholder="Phone Number" >
-				</div>			
-			</div>
-			<div class="field-agileinfo-spc form-w3-agile-text">
-				<textarea name="address" placeholder="Address..."></textarea>
-			</div>
-			<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="password" name="password" placeholder="Password" required="">
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="password" name="confirm_password" placeholder="Confirm Password" required="">
-				</div>
-			</div>
-			<div class="clear"></div>
-			<input type="submit" value="Submit">
-			<input type="reset" value="Clear Form">
-			<div class="clear"></div>
-		</form>
+			
 	</div>
 	<script type="text/javascript" src="tools/log/js/jquery-2.2.3.min.js"></script>
 	<script src="tools/log/js/jquery-ui.js"></script>
