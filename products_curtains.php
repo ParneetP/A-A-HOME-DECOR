@@ -26,15 +26,18 @@
   color:white;
   opacity:0;
   transition:0.5s;
+  
 }
 
 .logo:hover{
+
   padding-left:5px;
   padding-right:20px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   background:#E64980;
   color:white;
   transition-duration: 0.5s;
+  
   }
 
 .logo:hover span:after{
@@ -101,8 +104,6 @@ input{
     content:'\f00d';
     font-family:fontAwesome;
   }
-
-  
 }
 
 @media(max-width:356px){
@@ -126,10 +127,14 @@ input{
   -webkit-font-smoothing: antialiased;
   display: inline-block;
 }
+
 </style>
-
-<a href="#" class="logo">Search Result<span></span></a> 
-
+<a href="#" class="logo">Curtains<span></span></a> 
+<select name="forma" onchange="location = this.value;">
+<option value="products_curtains.php">Curtains</option>
+<option value="products_bedsheets.php">Bedsheets</option>
+<option value="products_pillow.php">Pillow Cases</option>
+</select>
 <div class="wrapper">
 <form method="post" action="products_search.php">
   <input type="text" name="search" placeholder="search.." />
@@ -138,23 +143,20 @@ input{
 <input type="submit" value="Search" class="button">
 </form>
 <?php
-  $user='root';
-  $pass='';
-  $db='homedecor';
-  $conn=mysqli_connect('localhost',$user, $pass, $db);
-  $search = $_POST['search']; 
-  $ProductSQL ="SELECT * FROM products WHERE productname LIKE '%".$search."%'";
-      
-  $ProductResult = mysqli_query($conn, $ProductSQL);?>
-  <?php if ($ProductResult->num_rows >0 ) { ?>
-  <?php while ($row = mysqli_fetch_assoc($ProductResult)) { ?>
+      $user='root';
+      $pass='';
+      $db='homedecor';
+      $conn=mysqli_connect('localhost',$user, $pass, $db);
+      $ProductSQL = "select * from products where productcatagory='curtain' ";
+      $ProductResult = mysqli_query($conn, $ProductSQL);?>
+<?php while ($row = mysqli_fetch_assoc($ProductResult)) { ?>
 
 <div class="menu-toggle"></div>
 <div class="blog" id="blog">
 		<div class="container">
 			<div class="w3ls-heading">
-				<h3>Our Products</h3>
-				<p>Browse our  products, get best prices</p>
+				<h3>Our Curtain Products</h3>
+				<p>Browse our Curtain products, get best prices</p>
 			</div>
 			<div class="w3-agile-blog-grids">
 				<div class="w3-agile-blog-grid">
@@ -169,6 +171,7 @@ input{
 							<div class="blog-left-right-top">
 								<h4><a href="#"><?php echo $row['productname']; ?></a></h4>
 								<p>Arrived At: <?php echo $row['arrivedat']?></p>
+
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -180,13 +183,8 @@ input{
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-        <?php } } else { ?>
-
-       	<p style="text-align:center;color:red;">No search result found</p>
-        
-        <?php  }  ?>
-
+        <?php } ?>
 			</div>
 		</div>
 	</div>
-<?php include('footer.php'); ?>
+    <?php include('footer.php'); ?>

@@ -6,7 +6,6 @@
 		<div class="container">
 			<div class="w3ls-heading">
 				<h2>About Products</h2>
-				
 			</div>
 			<div class="agileits-about-grids">
 				<div class="col-md-6 agileits-about-grid">
@@ -17,7 +16,6 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		
 		</div>
 </div>
 <div class="works" id="works">
@@ -59,7 +57,6 @@
 									<h4> A&A </h4>
 									<p>Home Decor Australia</p>
 								</div>
-							
 						</div>
 					</div>
 					<div class="col-sm-3 gallery-grids-left">
@@ -139,7 +136,7 @@
 									</div>
 									<div class="col-sm-10 testimonial-info">
 										<p>Winner of our anniversary draw 
-🎉Congratulations 🎉</p><h5>🌹Daisy Mulford🌹</h5>
+										🎉Congratulations 🎉</p><h5>🌹Daisy Mulford🌹</h5>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -163,20 +160,17 @@
 									</div>
 									<div class="col-sm-10 testimonial-info">
 										<p>💝 FIRST ANNIVERSARY 💝
-Yes we completed our first year in this beautiful business. And it’s all because of you beautiful people. Thank you sooo much everyone for your support and love. Just to say thanks I have 3 surprise gifts for you guys.</p>
-										
+										Yes we completed our first year in this beautiful business. And it’s all because of you beautiful people. Thank you sooo much everyone for your support and love. Just to say thanks I have 3 surprise gifts for you guys.</p>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
 							</li>
 						</ul>
 					</div>
-					
 				</div>
 			</div>
 		</div>
 	</div>
-	
 <div class="contact" id="contact">
 		<div class="container">
 			<div class="w3ls-heading">
@@ -206,8 +200,6 @@ Yes we completed our first year in this beautiful business. And it’s all becau
 							<h5>Mobile</h5>
 							<ul>
 								<li>+61 470 337 366</li>
-						
-								
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
@@ -220,44 +212,41 @@ Yes we completed our first year in this beautiful business. And it’s all becau
 							<h5>E-Mail</h5>
 							<ul>
 								<li><a href="aahomedecor47@gmail.com">aahomedecor47@gmail.com</a></li>
-								
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 				</div>
 				<div class="col-md-8 contact-form">
-					<form action="#" method="post">
-						<input type="text" name="Name" placeholder="Name" required="">
-						<input type="email" class="email" name="Email" placeholder="Email" required="">
-						<textarea placeholder="Message" name="Message" required=""></textarea>
+					<form action="codes/contact.php" method="post">
+						<input type="text" name="name" placeholder="Name" required="">
+						<input type="email" class="email" name="email" placeholder="Email" required="">
+						<textarea placeholder="message" name="message" required=""></textarea>
 						<input type="submit" value="SUBMIT">
 					</form>
 				</div>
-				
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 	<!-- //works -->
 	<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-							// Slideshow 4
-							$("#slider3").responsiveSlides({
-								auto: true,
-								pager:true,
-								nav:false,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-									$('.events').append("<li>before event fired.</li>");
-								},
-								after: function () {
-									$('.events').append("<li>after event fired.</li>");
-								}
-							});
-								
-						});
-					</script>
+	// You can also use "$(window).load(function() {"
+	$(function () {
+		// Slideshow 4
+		$("#slider3").responsiveSlides({
+			auto: true,
+			pager:true,
+			nav:false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
+		});
+	});
+</script>
 <?php include('footer.php'); ?>
