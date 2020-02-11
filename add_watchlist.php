@@ -28,7 +28,7 @@
     </div>
     <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'];?>">
 
-    < type="submit" style="background:brown;color:white;" class="btn btn-default">Add</button>
+    < button type="submit" style="background:brown;color:white;" class="btn btn-default">Add</button>
   </form>
 </div>
 
