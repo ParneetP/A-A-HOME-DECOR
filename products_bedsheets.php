@@ -11,6 +11,7 @@
 .logo span{
   position:relative;
   display:inline-block;
+  
   font-family:fontAwesome;
   width:20px;
   height:20px;
@@ -50,7 +51,6 @@ select{
 }
 
 input{
-  
   padding:10px;
   outline:none;
   border:none;
@@ -73,8 +73,8 @@ input{
   display:inline-flex;
   padding:0px;
   border-radius:10px;
+  height: 45px;
 }
-
 
 @media(max-width:457px)
 {
@@ -100,13 +100,14 @@ input{
   .menu-toggle.active:after{
     content:'\f00d';
     font-family:fontAwesome;
-  }
+  }  
 }
 
 @media(max-width:356px){
   .wrapper{
     display:none;
   }
+  
 }
 .button {
   color: #fff;
@@ -122,30 +123,45 @@ input{
   -webkit-font-smoothing: antialiased;
   display: inline-block;
 }
+
 </style>
-<a href="Company Logo" class="logo">Bedsheets<span></span></a>
-<select name="forma" onchange="location = this.value;">
- <option value="products_bedsheets.php">Bedsheets</option>
- <option value="products_pillow.php">Pillow Cases</option>
- <option value="products_curtains.php">Curtains</option>
+<div style="margin-left:430px;">
+<a style="margin-right:20px;" href="#" class="logo">Bedsheets<span></span></a> 
+<select style="margin-right:20px;" name="forma" onchange="location = this.value;">
+<option value="products_bedsheets.php">Bedsheets</option>
+<option value="products_pillow.php">Pillow Cases</option>
+<option value="products_curtains.php">Curtains</option>
+<option value="products_cushion.php">Cushions</option>
+<option value="products_tablec.php">Table Covers</option>
 </select>
-<div class="wrapper">
-  <input type="text" placeholder="search.." />
+<div style="margin-right:20px;" class="wrapper">
+<form method="post" action="products_search.php">
+  <input type="text" name="search" placeholder="search.." />
   <span class="srch"></span>
 </div>
-<button class="button">MENU</button>
-
+<input type="submit" value="Search" class="button">
+</form>
+</div>
+<?php
+      $user='root';
+      $pass='';
+      $db='homedecor';
+      $conn=mysqli_connect('localhost',$user, $pass, $db);
+      $ProductSQL = "select * from products where productcatagory='bedsheet' ";
+      $ProductResult = mysqli_query($conn, $ProductSQL);?>
+ 
 <div class="menu-toggle"></div>
 <div class="blog" id="blog">
 		<div class="container">
 			<div class="w3ls-heading">
-				<h3>Our Products</h3>
-				<p>Morbi in dui pretium, finibus sapien vel, bibendum ipsum</p>
+				<h3>Our Bedsheet Products</h3>
+				<p>Browse our bedsheet products, get best prices</p>
 			</div>
+      <?php while ($row = mysqli_fetch_assoc($ProductResult)) { ?>
 			<div class="w3-agile-blog-grids">
 				<div class="w3-agile-blog-grid">
 					<div class="col-md-5 w3-agile-blog-left">
-						<a href="single.html"><img src="images/a4.jpg" alt="" /></a>
+						<a href="single.html"><img src="tools/images/<?php echo $row['productimage']; ?>" alt="" /></a>
 					</div>
 					<div class="col-md-6 w3-agile-blog-right">
 						<div class="w3-agile-blog-right-top">
@@ -153,41 +169,24 @@ input{
 								<i class="fa fa-pencil" aria-hidden="true"></i>
 							</div>
 							<div class="blog-left-right-top">
-								<h4><a href="single.html">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+								<h4><a href="#"><?php echo $row['productname']; ?></a></h4>
+								<p>Arrived At: <?php echo $row['arrivedat']?></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="w3-agile-blog-right-info">
-							<p>Nullam in dui dolor. Donec faucibus, est sed mattis placerat, lorem orci vestibulum lorem, vel accumsan nisl urna eget leo. Cras varius bibendum augue nec pretium. Aenean a ex ante. Nunc ut dignissim justo, ut commodo odio. Donec magna mi, accumsan a mi eu, fermentum tempus elit.</p>
-							<a href="single.html">Read More</a>
+							<p><?php echo $row['productdetails']; ?></a></p>
+              <p>Price: $<?php echo $row['productprice']; ?></a></p>
+              <a href="payment.php">Buy Now</a>
+              <a href="reviews.php?pid=<?php echo $row['productid'] ?>">Reviews</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="w3-agile-blog-grid">
-					<div class="col-md-5 w3-agile-blog-left">
-						<a href="single.html"><img src="images/a7.jpg" alt="" /></a>
-					</div>
-					<div class="col-md-6 w3-agile-blog-right">
-						<div class="w3-agile-blog-right-top">
-							<div class="blog-left-left">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</div>
-							<div class="blog-left-right-top">
-								<h4><a href="single.html">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="w3-agile-blog-right-info">
-							<p>Nullam in dui dolor. Donec faucibus, est sed mattis placerat, lorem orci vestibulum lorem, vel accumsan nisl urna eget leo. Cras varius bibendum augue nec pretium. Aenean a ex ante. Nunc ut dignissim justo, ut commodo odio. Donec magna mi, accumsan a mi eu, fermentum tempus elit.</p>
-							<a href="single.html">Read More</a>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+
 			</div>
+      <?php } ?>
 		</div>
 	</div>
+
     <?php include('footer.php'); ?>
